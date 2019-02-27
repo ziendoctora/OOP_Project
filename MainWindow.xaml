@@ -1,0 +1,17 @@
+﻿<Window x:Class="Blah.MainWindow"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Blah"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="292" Width="328"
+        WindowStartupLocation="CenterScreen">
+    <Grid RenderTransformOrigin="1,0.508" Margin="0,0,2,0">
+        <Button Name ="btnAddTransaction" Content="Add Transaction" HorizontalAlignment="Left" Margin="72,10,0,0" VerticalAlignment="Top" Width="170" Click="btnAddTransaction_Click"/>
+        <Button Name ="btnInventory" Content="Inventory" HorizontalAlignment="Left" Margin="72,55,0,0" VerticalAlignment="Top" Width="170" Click="btnInventory_Click"/>
+        <ListBox HorizontalAlignment="Left" Height="146" Margin="10,100,0,0" VerticalAlignment="Top" Width="298"/>
+    </Grid>
+
+</Window>

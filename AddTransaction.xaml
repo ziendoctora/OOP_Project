@@ -1,0 +1,139 @@
+﻿<Window x:Class="Blah.AddTransaction"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Blah"
+        mc:Ignorable="d"
+        Title="AddTransaction" Height="400" Width="450"
+        Activated="Window_Activated">
+
+    <Grid Margin="0,0,2,30">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Customer: " 
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Grid.Row="0"
+               Grid.Column="0"
+               FontSize="16" 
+               Width="100" 
+               Height="30"/>
+        <ComboBox Name="cmbCustomer"
+                  HorizontalAlignment="Center"
+                  VerticalAlignment="Center"
+                  Grid.Row="0"
+                  Grid.Column="1"
+                  Width="100"
+                  Height="30"
+                  FontSize="16"/>
+        <Button Name="btnAddCustomer"
+                Content="Add Customer"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Grid.Row="0"
+                Grid.Column="2"
+                Width="120"
+                Height="30"
+                FontSize="16"
+                Click="btnAddCustomer_Click"/>
+        <Label Content="Product: "
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Grid.Row="1"
+               Grid.Column="0"
+               FontSize="16"
+               Width="100"
+               Height="30"/>
+        <ComboBox Name="cmbProduct"
+                  HorizontalAlignment="Center"
+                  VerticalAlignment="Center"
+                  Grid.Row="1"
+                  Grid.Column="1"
+                  Width="100"
+                  Height="30"
+                  FontSize="16" SelectionChanged="cmbProduct_SelectionChanged">
+            <ComboBoxItem Content="Bracelets"></ComboBoxItem>
+            <ComboBoxItem Content="Rings"></ComboBoxItem>
+            <ComboBoxItem Content="Necklace"></ComboBoxItem>
+            <ComboBoxItem Content="Earrings"></ComboBoxItem>
+        </ComboBox>
+        <Label Content="Weight: "
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Grid.Row="2"
+               Grid.Column="0"
+               FontSize="16"
+               Width="100"
+               Height="30"/>
+        <TextBox Name ="txtQuantity"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center"
+                 Grid.Row="2"
+                 Grid.Column="1"
+                 TextWrapping="Wrap"
+                 Width="100"
+                 Height="30"
+                 FontSize="16"/>
+        <Label Content="Quality: "
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Grid.Row="3"
+               Grid.Column="0"
+               FontSize="16"
+               Width="100"
+               Height="30"/>
+
+        <Label Content="Promised Date: "
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Grid.Row="4"
+               Grid.Column="0"
+               FontSize="16"
+               Width="120"
+               Height="30"/>
+        <DatePicker Name="dpPromisedDate"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    Width="110"
+                    Height="30"
+                    FontSize="16" Margin="10,7"/>
+        <Button Name ="btnAdd"
+                Content="Add"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Grid.Row="5"
+                Grid.Column="1"
+                Width="100"
+                Height="30"
+                FontSize="16" Click="btnAdd_Click"/>
+        <ComboBox  Name="cmbQuality"
+                  HorizontalAlignment="Center"
+                  VerticalAlignment="Center"
+                  Grid.Row="3"
+                  Grid.Column="1"
+                  Width="100"
+                  Height="30"
+                  FontSize="16" SelectionChanged="cmbProduct_SelectionChanged" Margin="15,5,15,10">
+            <ComboBoxItem Content="10k"></ComboBoxItem>
+            <ComboBoxItem Content="18k"></ComboBoxItem>
+            <ComboBoxItem Content="21k"></ComboBoxItem>
+           
+        </ComboBox>
+
+    </Grid>
+</Window>
+
